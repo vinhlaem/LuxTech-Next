@@ -4,7 +4,7 @@ import * as Icon from 'react-feather'
 import { useSelector } from 'react-redux'
 
 const Navbar = () => {
-    const cart = useSelector((state) => state.cart)
+    
     const [menu, setMenu] = React.useState(true)
  
     const toggleNavbar = () => {
@@ -14,7 +14,7 @@ const Navbar = () => {
     React.useEffect(() => {
         let elementId = document.getElementById("header");
         document.addEventListener("scroll", () => {
-            if (window.scrollY > 170) {
+            if (window.scrollY > 120) {
                 elementId.classList.add("is-sticky");
             } else {
                 elementId.classList.remove("is-sticky");
@@ -61,7 +61,7 @@ const Navbar = () => {
                                 </li>
 
                                 <li className="nav-item">
-                                    <Link href="/about-3" activeClassName="active">
+                                    <Link href="/about-us" activeClassName="active">
                                         <a onClick={toggleNavbar} className="nav-link">
                                             About Us
                                         </a>
@@ -76,18 +76,18 @@ const Navbar = () => {
 
                                     <ul className="dropdown-menu">
                                         <li className="nav-item">
-                                            <Link href="/feature-details" activeClassName="active">
+                                            <Link href="/website" activeClassName="active">
                                                 <a onClick={toggleNavbar} className="nav-link">Website development</a>
                                             </Link>
                                         </li>
 
                                         <li className="nav-item">
-                                            <Link href="/feature-details" activeClassName="active">
+                                            <Link href="/mobile" activeClassName="active">
                                                 <a onClick={toggleNavbar} className="nav-link">Mobile development</a>
                                             </Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link href="/feature-details" activeClassName="active">
+                                            <Link href="/blockchain" activeClassName="active">
                                                 <a onClick={toggleNavbar} className="nav-link">Blockchain Development</a>
                                             </Link>
                                         </li>
@@ -95,7 +95,7 @@ const Navbar = () => {
                                 </li>
 
                                 <li className="nav-item">
-                                    <Link href="/project-details" ctiveClassName="active">
+                                    <Link href="/drippy-project" ctiveClassName="active">
                                         <a onClick={toggleNavbar} className="nav-link">
                                             Stories
                                         </a>

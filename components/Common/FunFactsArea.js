@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { funfact } from '../ITStartup/constant';
+import { funfact } from '../Constant/constant';
 
 
 const FunFactsArea = () => {

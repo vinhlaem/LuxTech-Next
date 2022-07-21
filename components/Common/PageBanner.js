@@ -1,13 +1,14 @@
 import React from 'react';
-import { shape } from '../ITStartup/constant';
+import { shape } from '../Constant/constant';
 
-const PageBanner = ({pageTitle}) => {
+const PageBanner = ({pageTitle, pageTitleSecond}) => {
     return (
         <div className="page-title-area">
             <div className="d-table">
                 <div className="d-table-cell">
                     <div className="container">
                         <h2>{pageTitle}</h2>
+                        <h3>{pageTitleSecond}</h3>
                     </div>
                 </div>
             </div>

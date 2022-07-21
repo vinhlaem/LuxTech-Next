@@ -51,13 +51,13 @@ const RecentWorks = () => {
                 <div className="single-works">
                     <img src="/images/works-image/drippy.jpg" alt="image" />
 
-                    <Link href="/project-details">
+                    <Link href="/drippy-project">
                         <a className="icon"><Icon.Settings /></a>
                     </Link>
 
                     <div className="works-content">
                         <h2>
-                            <Link href="/pricing">
+                            <Link href="/drippy-project">
                                 <a>Drippy</a>
                             </Link>
                         </h2>
@@ -68,13 +68,13 @@ const RecentWorks = () => {
                 <div className="single-works">
                     <img src="/images/works-image/float.jpg" alt="image" />
 
-                    <Link href="/project-details">
+                    <Link href="/float-project">
                         <a className="icon"><Icon.Settings /></a>
                     </Link>
 
                     <div className="works-content">
                         <h2>
-                            <Link href="/project-details">
+                            <Link href="/float-project">
                                 <a>Float</a>
                             </Link>
                         </h2>
@@ -86,13 +86,13 @@ const RecentWorks = () => {
                 <div className="single-works">
                     <img src="/images/works-image/olive.jpg" alt="image" />
 
-                    <Link href="/project-details">
+                    <Link href="/olive-project">
                         <a className="icon"><Icon.Settings /></a>
                     </Link>
 
                     <div className="works-content">
                         <h2 className='title-h2'>
-                            <Link href="/project-details">
+                            <Link href="/olive-project">
                                 <a>Olive</a>
                             </Link>
                         </h2>

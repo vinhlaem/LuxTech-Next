@@ -19,7 +19,7 @@ const OurFeatures = () => {
                                 <img src='/images/services-image/web.png'/>
                             </div>
                             <h3>
-                                <Link href="/feature-details">
+                                <Link href="/website">
                                     <a>Website Development</a>
                                 </Link>
                             </h3>
@@ -33,7 +33,7 @@ const OurFeatures = () => {
                             <img src='/images/services-image/mobile.png'/>
                             </div> 
                             <h3>
-                                <Link href="/feature-details">
+                                <Link href="/mobile">
                                     <a>Mobile Development</a>
                                 </Link>
                             </h3>
@@ -47,7 +47,7 @@ const OurFeatures = () => {
                             <img src='/images/services-image/blockchains.png'/>
                             </div>
                             <h3>
-                                <Link href="/feature-details">
+                                <Link href="/blockchain">
                                     <a>Blockchain Development</a>
                                 </Link>
                             </h3>

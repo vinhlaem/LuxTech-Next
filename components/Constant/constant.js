@@ -181,3 +181,37 @@ export const funfact = [
         name: 'Clients'
     },
 ]
+
+export const features =[
+    {
+        name: 'TOKENOMICS',
+        content: 'Drippy Zombie NFTs have the utility of $WRLD & $DRIPPY tokens. Holders may earn tokens passively via staking or by playing in our Metaverse (Coming soon).',
+        img: '/images/works-image/token.png'
+    },
+    {
+        name: 'PLAY TO EARN',
+        content: 'Games will be launched on our NFT World and be playable in Minecraft. Game modes include PVP, Battle Royale, and much more. Come and battle to earn rewards. Drippy Zombie holders who don’t have time to play may passively stake their NFTs to earn $WRLD & $DRIPPY tokens.',
+        img: '/images/works-image/play.png'
+    },
+    {
+        name: 'MYSTERY BOX',
+        content: 'Drippy Zombies can earn redeemable Mystery Boxes. Each Mystery box will include digital items such as clothing and many traits for your NFT. Qualifying digital items will be redeemable for real-world objects!',
+        img: '/images/works-image/box.png'
+    },
+    {
+        name: 'FULL OWNERSHIP',
+        content: 'Full Commercial Rights granted to owners of Drippy Zombies NFTs',
+        img: '/images/works-image/full.png'
+    },
+    {
+        name: 'COMMUNITY NEEDS',
+        content: 'Community is what drives us. Supporters and contributors to our community will benefit from our unique rewards system. We will work with our holders to move the project into the future.',
+        img: '/images/works-image/com.png'
+    },
+    {
+        name: 'MORE TO COME',
+        content: 'There will be additional collections, perks, and unique opportunities we will construct together as a community.',
+        img: '/images/works-image/more.png'
+    },
+
+]

@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { img, shape } from './constant';
+import { img, shape } from '../Constant/constant';
 
 const MainBanner = () => {
     return (

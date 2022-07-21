@@ -1,6 +1,6 @@
 import React from 'react';
 import dynamic from 'next/dynamic';
-import { team } from '../ITStartup/constant';
+import { team } from '../Constant/constant';
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 import * as Icon from 'react-feather';
 import Link from 'next/link'
@@ -56,23 +56,14 @@ const Team = () => {
                     <div className="team-image">
                         <img src={value.url_img} alt={value.name} />
                         </div>
-                        
                             <div className="team-content">
                             <div className="team-info">
                                 <h3>{value.name}</h3>
                                 <span>{value.skill}</span>
                             </div>
-                           
-
-                            
                         </div>
                     </div>
                     ))}
-
-                    
-                
-            
-                
             </OwlCarousel> : ''}
         </div>
     )

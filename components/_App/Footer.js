@@ -28,17 +28,17 @@ const Footer = () => {
                             <h3>Company</h3>
                             <ul className="list">
                                 <li>
-                                    <Link href="/about-3">
+                                    <Link href="/about-us">
                                         <a>About Us</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/feature-details">
+                                    <Link href="/website">
                                         <a>Services</a>
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/project-details">
+                                    <Link href="/drippy-project">
                                         <a>Stories</a>
                                     </Link>
                                 </li>

@@ -1,15 +1,15 @@
 /* Max width 767px */
 @media only screen and (max-width: 767px) {
   .btn {
-    font-size: 13px;
+    font-size: 15px;
     padding: 13px 33px;
   }
   .ptb-80 {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .section-title {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
   .section-title h2 {
     font-size: 20px;
@@ -416,7 +416,6 @@
   }
   .project-details-desc .project-details-information .single-info-box {
     float: left;
-    width: 50%;
     margin-top: 20px;
   }
   .project-details-desc .project-details-information .single-info-box h4 {
@@ -1185,7 +1184,6 @@
   .agency-about-img {
     padding-right: 0;
     text-align: center;
-    margin-bottom: 30px;
   }
   .agency-about-content {
     max-width: 100%;
@@ -1880,9 +1878,6 @@
     left: 20px;
     bottom: 20px;
   }
-  .project-details-desc .project-details-information .single-info-box {
-    width: 33.3333%;
-  }
   .contact-info-area {
     padding-bottom: 50px;
   }
@@ -2276,7 +2271,7 @@
     padding-bottom: 10px;
   }
   .startp-nav nav .navbar-nav .nav-item a {
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 6px;
     margin-right: 6px;
   }

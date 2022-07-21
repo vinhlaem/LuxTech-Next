@@ -41,7 +41,7 @@ const About3 = () => {
 
                 <div className="container">
                     <div className="about-inner-area">
-                        <div className="row justify-content-center">
+                        <div className="row justify-content-center text-center ">
                             <div className="col-lg-4 col-md-6 col-sm-6">
                                 <div className="about-text">
                                     <h3>Our Vision</h3>

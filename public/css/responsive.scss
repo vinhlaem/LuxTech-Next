@@ -13,17 +13,17 @@ $value_seven: 1550px;
 @media only #{$media} and ($feature_max : $value_two) {
 
     .btn {
-        font-size: 13px;
+        font-size: 15px;
         padding: 13px 33px;
     }
     .ptb-80 {
         padding: {
-            top: 50px;
-            bottom: 50px;
+            top: 30px;
+            bottom: 30px;
         }
     }
     .section-title {
-        margin-bottom: 40px;
+        margin-bottom: 20px;
 
         h2 {
             font-size: 20px;
@@ -282,12 +282,14 @@ $value_seven: 1550px;
         }
     }
     .single-team {
+        
         padding: {
             top: 30px;
             bottom: 30px;
         }
 
         .team-image {
+            
             padding: {
                 left: 20px;
                 right: 20px;
@@ -567,7 +569,7 @@ $value_seven: 1550px;
         .project-details-information {
             .single-info-box {
                 float: left;
-                width: 50%;
+                
                 margin-top: 20px;
 
                 h4 {
@@ -1615,7 +1617,7 @@ $value_seven: 1550px;
     .agency-about-img {
         padding-right: 0;
         text-align: center;
-        margin-bottom: 30px;
+        
     }
     .agency-about-content {
         max-width: 100%;
@@ -2537,14 +2539,6 @@ $value_seven: 1550px;
         }
     }
 
-    .project-details-desc {
-        .project-details-information {
-            .single-info-box {
-                width: 33.3333%;
-            }
-        }
-    }
-
     .contact-info-area {
         padding-bottom: 50px;
     }
@@ -3081,7 +3075,7 @@ $value_seven: 1550px;
             .navbar-nav {
                 .nav-item {
                     a {
-                        font-size: 14px;
+                        font-size: 16px;
                         margin-left: 6px;
                         margin-right: 6px;
                     }
