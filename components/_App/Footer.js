@@ -84,7 +84,7 @@ const Footer = () => {
                             </ul>
                             <ul className="social-links">
                                 <li> 
-                                    <a href="https://www.facebook.com/phung.76" className="facebook" target="_blank">
+                                    <a href="https://www.facebook.com/luxtech.global" className="facebook" target="_blank">
                                         <Icon.Facebook />
                                     </a> 
                                 </li>

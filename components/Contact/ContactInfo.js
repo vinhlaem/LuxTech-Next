@@ -12,8 +12,7 @@ const ContactInfo = () => {
                                 <Icon.Mail />
                             </div>
                             <h3>Mail Here</h3>
-                            <p><a href="mailto:admin@startp.com">admin@startp.com</a></p>
-                            <p><a href="mailto:info@startp.com">info@startp.com</a></p>
+                            <p><a href="mailto:nvphvn@gmail.com">nvphvn@gmail.com</a></p>
                         </div>
                     </div>
 
@@ -23,7 +22,7 @@ const ContactInfo = () => {
                                 <Icon.MapPin />
                             </div>
                             <h3>Visit Here</h3>
-                            <p>27 Division St, New York, NY 10002, United States of America</p>
+                            <p>298 Nguyen Sinh Sac Street, Da Nang City, Viet Nam</p>
                         </div>
                     </div>
 
@@ -33,8 +32,8 @@ const ContactInfo = () => {
                                 <Icon.Phone />
                             </div>
                             <h3>Call Here</h3>
-                            <p><a href="tel:+1234567890">+123 456 7890</a></p>
-                            <p><a href="tel:+2414524526">+241 452 4526</a></p>
+                            <p>Mr Phung: <a href="tel:+84 355 821 097">+84 355 821 097</a></p>
+                            
                         </div>
                     </div>
                 </div>
