@@ -16,11 +16,11 @@ const Index = () => {
             description="A short description goes here."
             openGraph={{
                 url: 'https://www.url.ie/a',
-                title: 'Open Graph Title',
-                description: 'Open Graph Description',
+                title: 'LuxTech || Home Page',
+                description: 'LuxTech Global',
                 images: [
                   {
-                    url: 'https://lux-tech-next.vercel.app/images/agency-image/about-us.jpg',
+                    url: '/images/favicon.png',
                     width: 800,
                     height: 600,
                     alt: 'Og Image Alt',
