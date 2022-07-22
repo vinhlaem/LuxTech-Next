@@ -2,17 +2,29 @@ import React from 'react';
 import Navbar from "@/components/_App/Navbar";
 import Footer from "@/components/_App/Footer";
 import PageBanner from '@/components/Common/PageBanner';
-import {
-    Accordion,
-    AccordionItem,
-    AccordionItemHeading,
-    AccordionItemPanel,
-    AccordionItemButton
-} from 'react-accessible-accordion';
  
 const Blockchain_Development = () => {
     return (
         <>
+        <NextSeo
+            title="LuxTech"
+            openGraph={{
+                url: 'https://www.url.ie/a',
+                title: 'LuxTech || BlockChain',
+                description: 'Blockchain Development',
+                images: [
+                  {
+                    url: 'https://lux-tech-next.vercel.app/images/services-image/blockchains.png',
+                    width: 800,
+                    height: 600,
+                    alt: 'Blockchain Development',
+                    type: 'image/png',
+                  }
+                ],
+                site_name: 'Blockchain Development',
+              }}
+         
+        />
             <Navbar />
 
             <PageBanner pageTitle="Blockchain Development" />
