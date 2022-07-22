@@ -31,7 +31,7 @@ const Navbar = () => {
                 <div className="container">
                     <nav className="navbar navbar-expand-md navbar-light">
                         <Link href="/">
-                            <a onClick={toggleNavbar} className="navbar-brand">
+                            <a className="navbar-brand">
                                 <img src="/images/logo.png" alt="logo" />
                             </a>
                         </Link>
@@ -97,7 +97,7 @@ const Navbar = () => {
                                 <li className="nav-item">
                                     <Link href="/drippy-project" ctiveClassName="active">
                                         <a onClick={toggleNavbar} className="nav-link">
-                                            Stories
+                                            Project
                                         </a>
                                     </Link>
                                 </li>

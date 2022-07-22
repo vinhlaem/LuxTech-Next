@@ -12,7 +12,7 @@ const ContactInfo = () => {
                                 <Icon.Mail />
                             </div>
                             <h3>Mail Here</h3>
-                            <p><a href="mailto:nvphvn@gmail.com">nvphvn@gmail.com</a></p>
+                            <p><a href="mailto:nvphvn@gmail.com">luxtech.global@gmail.com</a></p>
                         </div>
                     </div>
 

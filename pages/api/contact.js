@@ -15,7 +15,7 @@ export default async (req, res) => {
     const {name, email, number, subject, text} = req.body;
     const data = {
         // Update email address here
-        to: 'example@gmail.com',
+        to: 'luxtech.global@gmail.com',
         from: email,
         subject: 'Hi there',
         text: text,

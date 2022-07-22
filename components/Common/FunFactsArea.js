@@ -5,7 +5,7 @@ import { funfact } from '../Constant/constant';
 
 const FunFactsArea = () => {
     return (
-        <div className="funfacts-area ptb-40">
+        <div className="funfacts-area ptb-60">
             <div className="container">
                 <div className="section-title">
                     <h2>We always try to understand users expectation</h2>

@@ -247,12 +247,13 @@ textarea.form-control {
     background-color: $light-green-color;
     box-shadow: 0 13px 27px 0 rgba(68, 206, 111, .25);
 
-    &:hover, &:focus {
+    &:hover{
         color: $white-color;
         background: $black-color;
         transform: translateY(-5px);
         box-shadow: 0 13px 27px 0 rgba(198, 121, 227, .25);
     }
+    
     &:active{
         color: $black-color;
     background-color: $light-green-color;
@@ -2070,11 +2071,11 @@ Features CSS
     margin-bottom: 30px;
     border-radius: 5px;
     transition: $transition;
+    cursor: pointer;
 
     h3 {
-        margin-top: 15px;
+        margin-top: 18px;
         font-size: 18px;
-        margin-bottom: 10px;
     }
     .icon {
         position: absolute;
@@ -2440,9 +2441,9 @@ Works CSS
 .single-works {
     position: relative;
     margin-bottom: 30px;
-    
+    width: 400px;
     img {
-        height: 250px;
+        height: 270px;
     }
       
     &::before {
@@ -4941,11 +4942,11 @@ Shop Details CSS
                         width: 15px;
                     }
                     &.facebook {
-                        border-color: #4267b2;
-                        color: #4267b2;
+                        border-color: #38A1F3;
+                        color: #38A1F3;
 
                         &:hover {
-                            background: #4267b2;
+                            background: #38A1F3;
                             color: $white-color;
                         }
                     }
@@ -4959,20 +4960,20 @@ Shop Details CSS
                         }
                     }
                     &.linkedin {
-                        border-color: #0077B5;
-                        color: #0077B5;
+                        border-color: #38A1F3;
+                        color: #38A1F3;
 
                         &:hover {
-                            background: #0077B5;
+                            background: #38A1F3;
                             color: $white-color;
                         }
                     }
                     &.instagram {
-                        border-color: #231F20;
-                        color: #231F20;
+                        border-color: #38A1F3;
+                        color: #38A1F3;
 
                         &:hover {
-                            background: #231F20;
+                            background: #38A1F3;
                             color: $white-color;
                         }
                     }
@@ -5810,6 +5811,13 @@ Blog Details CSS
             }
         }
     }
+}
+
+.footer-item{
+    display: flex;
+}
+.groups{
+    display: flex;
 }
 .comments-area {
     margin-top: 25px;
@@ -6912,16 +6920,16 @@ Coming Soon CSS
                     width: 15px;
                 }
                 &.facebook {
-                    background-color: #3b5998;
+                    background-color: #38A1F3;
                 }
                 &.twitter {
-                    background-color: #1da1f2;
+                    background-color: #38A1F3;
                 }
                 &.linkedin {
-                    background-color: #0077b5;
+                    background-color: #38A1F3;
                 }
                 &.instagram {
-                    background-color: #c13584;
+                    background-color: #38A1F3;
                 }
                 &:hover, &:focus {
                     background-color: $light-green-color;
@@ -9966,11 +9974,11 @@ Footer CSS
                         width: 15px;
                     }
                     &.facebook {
-                        border-color: #4267b2;
-                        color: #4267b2;
+                        border-color: #38A1F3;
+                        color: #38A1F3;
 
                         &:hover {
-                            background: #4267b2;
+                            background: #38A1F3;
                             color: $white-color;
                         }
                     }
@@ -9984,20 +9992,20 @@ Footer CSS
                         }
                     }
                     &.linkedin {
-                        border-color: #0077B5;
-                        color: #0077B5;
+                        border-color: #38A1F3;
+                        color: #38A1F3;
 
                         &:hover {
-                            background: #0077B5;
+                            background: #38A1F3;
                             color: $white-color;
                         }
                     }
                     &.instagram {
-                        border-color: #231F20;
-                        color: #231F20;
+                        border-color: #38A1F3;
+                        color: #38A1F3;
 
                         &:hover {
-                            background: #231F20;
+                            background: #38A1F3;
                             color: $white-color;
                         }
                     }

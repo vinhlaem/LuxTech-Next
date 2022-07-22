@@ -9,8 +9,6 @@ const options = {
     loop: true,
     nav: false,
     autoplay: true,
-    margin:30,
-    height:250,
     dots: false,
     responsive: {
         0: {
@@ -51,9 +49,7 @@ const RecentWorks = () => {
                 <div className="single-works">
                     <img src="/images/works-image/drippy.jpg" alt="image" />
 
-                    <Link href="/drippy-project">
-                        <a className="icon"><Icon.Settings /></a>
-                    </Link>
+                    
 
                     <div className="works-content">
                         <h2>
@@ -68,9 +64,7 @@ const RecentWorks = () => {
                 <div className="single-works">
                     <img src="/images/works-image/float.jpg" alt="image" />
 
-                    <Link href="/float-project">
-                        <a className="icon"><Icon.Settings /></a>
-                    </Link>
+                   
 
                     <div className="works-content">
                         <h2>
@@ -86,9 +80,6 @@ const RecentWorks = () => {
                 <div className="single-works">
                     <img src="/images/works-image/olive.jpg" alt="image" />
 
-                    <Link href="/olive-project">
-                        <a className="icon"><Icon.Settings /></a>
-                    </Link>
 
                     <div className="works-content">
                         <h2 className='title-h2'>

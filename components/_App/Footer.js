@@ -23,7 +23,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="col-lg-3 col-md-6">
+                    <div className="items col-lg-3 col-md-6">
                         <div className="single-footer-widget pl-5">
                             <h3>Company</h3>
                             <ul className="list">
@@ -46,7 +46,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="col-lg-3 col-md-6">
+                    <div className="items col-lg-3 col-md-6">
                         <div className="single-footer-widget">
                             <h3>Support</h3>
                             <ul className="list">
@@ -75,7 +75,7 @@ const Footer = () => {
                                 </li>
                                 <li>
                                     <Icon.Mail />
-                                    Email: <a href="mailto:nvphvn@gmail.com">nvphvn@gmail.com</a>
+                                    Email: <a href="mailto:nvphvn@gmail.com">luxtech.global@gmail.com</a>
                                 </li>
                                 <li> 
                                     <Icon.PhoneCall />

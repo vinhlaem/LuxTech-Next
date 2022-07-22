@@ -11,7 +11,11 @@ $value_seven: 1550px;
 
 /* Max width 767px */
 @media only #{$media} and ($feature_max : $value_two) {
-
+    .items {
+        
+        width: 50%;
+        display: inline;
+    }
     .btn {
         font-size: 15px;
         padding: 13px 33px;
@@ -343,6 +347,7 @@ $value_seven: 1550px;
         }
     }
     .single-works {
+        width: 100%;
         .icon {
             right: 10px;;
             width: 38px;
@@ -2095,7 +2100,7 @@ $value_seven: 1550px;
     .startp-nav {
         nav {
             .navbar-collapse {
-                max-height: 70vh;
+                height: 100vh;
                 overflow-y: scroll;
 
                 &::-webkit-scrollbar {

@@ -232,7 +232,7 @@ textarea.form-control {
   background-color: #0b9df7;
   box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
 }
-.btn-primary:hover, .btn-primary:focus {
+.btn-primary:hover {
   color: #ffffff;
   background: #0e314c;
   transform: translateY(-5px);
@@ -1929,11 +1929,11 @@ Features CSS
   margin-bottom: 30px;
   border-radius: 5px;
   transition: 0.5s;
+  cursor: pointer;
 }
 .single-features h3 {
-  margin-top: 15px;
+  margin-top: 18px;
   font-size: 18px;
-  margin-bottom: 10px;
 }
 .single-features .icon {
   position: absolute;
@@ -2244,9 +2244,10 @@ Works CSS
 .single-works {
   position: relative;
   margin-bottom: 30px;
+  width: 400px;
 }
 .single-works img {
-  height: 250px;
+  height: 270px;
 }
 .single-works::before {
   content: "";
@@ -4402,11 +4403,11 @@ Shop Details CSS
   width: 15px;
 }
 .products-details .products-share-social ul li a.facebook {
-  border-color: #4267b2;
-  color: #4267b2;
+  border-color: #38A1F3;
+  color: #38A1F3;
 }
 .products-details .products-share-social ul li a.facebook:hover {
-  background: #4267b2;
+  background: #38A1F3;
   color: #ffffff;
 }
 .products-details .products-share-social ul li a.twitter {
@@ -4418,19 +4419,19 @@ Shop Details CSS
   color: #ffffff;
 }
 .products-details .products-share-social ul li a.linkedin {
-  border-color: #0077B5;
-  color: #0077B5;
+  border-color: #38A1F3;
+  color: #38A1F3;
 }
 .products-details .products-share-social ul li a.linkedin:hover {
-  background: #0077B5;
+  background: #38A1F3;
   color: #ffffff;
 }
 .products-details .products-share-social ul li a.instagram {
-  border-color: #231F20;
-  color: #231F20;
+  border-color: #38A1F3;
+  color: #38A1F3;
 }
 .products-details .products-share-social ul li a.instagram:hover {
-  background: #231F20;
+  background: #38A1F3;
   color: #ffffff;
 }
 .products-details .products-share-social ul li a:hover {
@@ -5124,6 +5125,14 @@ Blog Details CSS
 .blog-details-desc .article-footer .article-tags a:hover {
   color: #ffffff;
   background-color: #0b9df7;
+}
+
+.footer-item {
+  display: flex;
+}
+
+.groups {
+  display: flex;
 }
 
 .comments-area {
@@ -6062,16 +6071,16 @@ Coming Soon CSS
   width: 15px;
 }
 .coming-soon-area .social-list li a.facebook {
-  background-color: #3b5998;
+  background-color: #38A1F3;
 }
 .coming-soon-area .social-list li a.twitter {
-  background-color: #1da1f2;
+  background-color: #38A1F3;
 }
 .coming-soon-area .social-list li a.linkedin {
-  background-color: #0077b5;
+  background-color: #38A1F3;
 }
 .coming-soon-area .social-list li a.instagram {
-  background-color: #c13584;
+  background-color: #38A1F3;
 }
 .coming-soon-area .social-list li a:hover, .coming-soon-area .social-list li a:focus {
   background-color: #0b9df7;
@@ -8832,11 +8841,11 @@ Footer CSS
   width: 15px;
 }
 .single-footer-widget ul.social-links li a.facebook {
-  border-color: #4267b2;
-  color: #4267b2;
+  border-color: #38A1F3;
+  color: #38A1F3;
 }
 .single-footer-widget ul.social-links li a.facebook:hover {
-  background: #4267b2;
+  background: #38A1F3;
   color: #ffffff;
 }
 .single-footer-widget ul.social-links li a.twitter {
@@ -8848,19 +8857,19 @@ Footer CSS
   color: #ffffff;
 }
 .single-footer-widget ul.social-links li a.linkedin {
-  border-color: #0077B5;
-  color: #0077B5;
+  border-color: #38A1F3;
+  color: #38A1F3;
 }
 .single-footer-widget ul.social-links li a.linkedin:hover {
-  background: #0077B5;
+  background: #38A1F3;
   color: #ffffff;
 }
 .single-footer-widget ul.social-links li a.instagram {
-  border-color: #231F20;
-  color: #231F20;
+  border-color: #38A1F3;
+  color: #38A1F3;
 }
 .single-footer-widget ul.social-links li a.instagram:hover {
-  background: #231F20;
+  background: #38A1F3;
   color: #ffffff;
 }
 .single-footer-widget ul.social-links li a:hover {

@@ -102,7 +102,7 @@ const ContactForm = () => {
                                     </div>
                                 </div>
 
-                                <div className="col-lg-6 col-md-6">
+                                <div className="col-lg-12 col-md-12">
                                     <div className="form-group">
                                         <input 
                                             type="text" 
@@ -119,7 +119,7 @@ const ContactForm = () => {
                                     </div>
                                 </div>
 
-                                <div className="col-lg-6 col-md-6">
+                                <div className="col-lg-12 col-md-12">
                                     <div className="form-group">
                                         <input 
                                             type="text" 
@@ -153,12 +153,6 @@ const ContactForm = () => {
                                         </div>
                                     </div>
 
-                                    <div className="form-check">
-                                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                                        <label className="form-check-label" htmlFor="flexCheckDefault">
-                                            By checking this, you agree to our <Link href="/term-condition"><a>Terms</a></Link> and <Link href="/privacy-policy"><a>Privacy policy</a></Link>.
-                                        </label>
-                                    </div>
                                 </div>
             
                                 <div className="col-lg-12 col-sm-12">

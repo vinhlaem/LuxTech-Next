@@ -1,5 +1,9 @@
 /* Max width 767px */
 @media only screen and (max-width: 767px) {
+  .items {
+    width: 50%;
+    display: inline;
+  }
   .btn {
     font-size: 15px;
     padding: 13px 33px;
@@ -249,6 +253,9 @@
     right: 0;
     top: 0;
     margin-top: 15px;
+  }
+  .single-works {
+    width: 100%;
   }
   .single-works .icon {
     right: 10px;
@@ -1556,7 +1563,7 @@
     background-color: #ffffff;
   }
   .startp-nav nav .navbar-collapse {
-    max-height: 70vh;
+    height: 100vh;
     overflow-y: scroll;
   }
   .startp-nav nav .navbar-collapse::-webkit-scrollbar {
