@@ -1,4 +1,5 @@
 import React from 'react';
+import {NextSeo} from 'next-seo'
 import Navbar from "@/components/_App/Navbar";
 import Team from "@/components/Common/Team";
 import Footer from "@/components/_App/Footer";
@@ -8,6 +9,25 @@ import PageBanner from '@/components/Common/PageBanner';
 const About3 = () => {
     return (
         <>
+        <NextSeo
+            title="LuxTech"
+            openGraph={{
+                url: 'https://www.url.ie/a',
+                title: 'LuxTech || About Us Page',
+                description: 'Who are we?',
+                images: [
+                  {
+                    url: 'https://lux-tech-next.vercel.app/images/agency-image/about-us.jpg',
+                    width: 800,
+                    height: 600,
+                    alt: 'About-us',
+                    type: 'image/jpeg',
+                  }
+                ],
+                site_name: 'About Us',
+              }}
+         
+        />
             <Navbar />
 
             <PageBanner pageTitle="About Us" />

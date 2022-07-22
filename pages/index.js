@@ -13,7 +13,6 @@ const Index = () => {
         <>
         <NextSeo
             title="LuxTech"
-            description="A short description goes here."
             openGraph={{
                 url: 'https://www.url.ie/a',
                 title: 'LuxTech || Home Page',
