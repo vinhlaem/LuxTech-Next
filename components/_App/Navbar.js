@@ -76,18 +76,18 @@ const Navbar = () => {
 
                                     <ul className="dropdown-menu">
                                         <li className="nav-item">
-                                            <Link href="/website" activeClassName="active">
+                                            <Link href="/website-development" activeClassName="active">
                                                 <a onClick={toggleNavbar} className="nav-link">Website development</a>
                                             </Link>
                                         </li>
 
                                         <li className="nav-item">
-                                            <Link href="/mobile" activeClassName="active">
+                                            <Link href="/mobile-development" activeClassName="active">
                                                 <a onClick={toggleNavbar} className="nav-link">Mobile development</a>
                                             </Link>
                                         </li>
                                         <li className="nav-item">
-                                            <Link href="/blockchain" activeClassName="active">
+                                            <Link href="/blockchain-development" activeClassName="active">
                                                 <a onClick={toggleNavbar} className="nav-link">Blockchain Development</a>
                                             </Link>
                                         </li>
