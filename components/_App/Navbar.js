@@ -97,7 +97,7 @@ const Navbar = () => {
                                 <li className="nav-item">
                                     <Link href="/drippy-project" ctiveClassName="active">
                                         <a onClick={toggleNavbar} className="nav-link">
-                                            Project
+                                            Projects
                                         </a>
                                     </Link>
                                 </li>
