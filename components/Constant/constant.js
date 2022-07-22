@@ -118,7 +118,7 @@ export const shape = [
 export const team = [
     {
         name: 'Mr. Phung',
-        url_img: '/images/team-image/phung.jpg',
+        url_img: '/images/team-image/Phung.jpg',
         skill: 'CEO & Founder'
     },
     {
