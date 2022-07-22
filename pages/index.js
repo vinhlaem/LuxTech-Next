@@ -15,6 +15,9 @@ const Index = () => {
             title="LuxTech"
             description="A short description goes here."
             openGraph={{
+                url: 'https://www.url.ie/a',
+                title: 'Open Graph Title',
+                description: 'Open Graph Description',
                 images: [
                   {
                     url: 'https://lux-tech-next.vercel.app/images/agency-image/about-us.jpg',
