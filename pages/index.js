@@ -20,7 +20,7 @@ const Index = () => {
                 description: 'LuxTech Global',
                 images: [
                   {
-                    url: '/images/favicon.png',
+                    url: 'https://lux-tech-next.vercel.app/images/favicon.png',
                     width: 800,
                     height: 600,
                     alt: 'Og Image Alt',
