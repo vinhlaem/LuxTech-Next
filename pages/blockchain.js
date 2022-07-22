@@ -1,13 +1,15 @@
 import React from 'react';
+import {NextSeo} from 'next-seo'
 import Navbar from "@/components/_App/Navbar";
 import Footer from "@/components/_App/Footer";
 import PageBanner from '@/components/Common/PageBanner';
+
  
 const Blockchain_Development = () => {
     return (
         <>
         <NextSeo
-            title="LuxTech"
+            title="Blockchain"
             openGraph={{
                 url: 'https://www.url.ie/a',
                 title: 'LuxTech || BlockChain',

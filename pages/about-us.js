@@ -10,7 +10,7 @@ const About3 = () => {
     return (
         <>
         <NextSeo
-            title="LuxTech"
+            title="About Us"
             openGraph={{
                 url: 'https://www.url.ie/a',
                 title: 'LuxTech || About Us Page',
