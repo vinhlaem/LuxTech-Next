@@ -12,8 +12,21 @@ const Index = () => {
     return (
         <>
         <NextSeo
-            title="Simple Usage Example"
+            title="LuxTech"
             description="A short description goes here."
+            openGraph={{
+                images: [
+                  {
+                    url: 'https://www.example.ie/og-image-01.jpg',
+                    width: 800,
+                    height: 600,
+                    alt: 'Og Image Alt',
+                    type: 'image/jpeg',
+                  }
+                ],
+                site_name: 'Home',
+              }}
+         
         />
             <Navbar />
             <MainBanner />
