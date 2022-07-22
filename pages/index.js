@@ -17,7 +17,7 @@ const Index = () => {
             openGraph={{
                 images: [
                   {
-                    url: '/images/agency-image/about-us.jpg',
+                    url: 'https://lux-tech-next.vercel.app/images/agency-image/about-us.jpg',
                     width: 800,
                     height: 600,
                     alt: 'Og Image Alt',
