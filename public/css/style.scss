@@ -247,11 +247,16 @@ textarea.form-control {
     background-color: $light-green-color;
     box-shadow: 0 13px 27px 0 rgba(68, 206, 111, .25);
 
-    &:hover, &:focus, &:active {
+    &:hover, &:focus {
         color: $white-color;
-        background: $white-color;
+        background: $black-color;
         transform: translateY(-5px);
         box-shadow: 0 13px 27px 0 rgba(198, 121, 227, .25);
+    }
+    &:active{
+        color: $black-color;
+    background-color: $light-green-color;
+    box-shadow: 0 13px 27px 0 rgba(68, 206, 111, .25);
     }
     &.focus, &:focus {
         box-shadow: unset;
@@ -6730,7 +6735,7 @@ Project Details CSS
         font-size: 18px;
     }
     .project-details-information {
-        overflow: hidden;
+        // overflow: hidden;
         display: flex;
         justify-content: center;
         .single-info-box {

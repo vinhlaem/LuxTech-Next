@@ -232,11 +232,16 @@ textarea.form-control {
   background-color: #0b9df7;
   box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
 }
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+.btn-primary:hover, .btn-primary:focus {
   color: #ffffff;
-  background: #ffffff;
+  background: #0e314c;
   transform: translateY(-5px);
   box-shadow: 0 13px 27px 0 rgba(198, 121, 227, 0.25);
+}
+.btn-primary:active {
+  color: #0e314c;
+  background-color: #0b9df7;
+  box-shadow: 0 13px 27px 0 rgba(68, 206, 111, 0.25);
 }
 .btn-primary.focus, .btn-primary:focus {
   box-shadow: unset;
@@ -5899,7 +5904,6 @@ Project Details CSS
   font-size: 18px;
 }
 .project-details-desc .project-details-information {
-  overflow: hidden;
   display: flex;
   justify-content: center;
 }
