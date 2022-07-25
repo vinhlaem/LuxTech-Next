@@ -32,6 +32,7 @@
         "redux": "^3.6.0",
         "redux-devtools-extension": "^2.13.9",
         "sass": "^1.43.4",
+        "sweetalert": "^2.1.2",
         "sweetalert2": "^10.16.9",
         "sweetalert2-react-content": "^3.3.3",
         "yup": "^0.32.11"

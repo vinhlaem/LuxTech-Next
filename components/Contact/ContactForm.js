@@ -3,12 +3,8 @@ import { useForm } from 'react-hook-form'
 import {yupResolver} from '@hookform/resolvers/yup'
 import * as yup from "yup"
 import emailjs from '@emailjs/browser';
-import Link from 'next/link'
-import axios from 'axios'
-import Swal from 'sweetalert2'
-import withReactContent from 'sweetalert2-react-content'
-const MySwal = withReactContent(Swal)
-import baseUrl from '../../utils/baseUrl'
+import swal from 'sweetalert';
+
 
 
 
@@ -44,11 +40,13 @@ const ContactForm = () => {
     emailjs.sendForm('service_811vjco', 'template_t1ugif9', form.current, 'cc3dTiR3K0elY_ywF')
       .then((result) => {
           console.log(result.text);
+          swal("Success!", "Thank for contact us!", "success");
+          reset()
       }, (error) => {
           console.log(error.text);
       });
-      reset()
-      setResult(true)
+      
+      
   };
       
 
@@ -171,7 +169,7 @@ const ContactForm = () => {
                                 <div className="col-lg-12 col-sm-12">
                                     <button type="submit" className="btn btn-primary">Send Message</button>
                                 </div>
-                                <div className='row'>{result ? <Result/> : null}</div>
+                                {/* <div className='row'>{result ? <Result/> : null}</div> */}
                             </div>
                         </form> 
                     </div>
