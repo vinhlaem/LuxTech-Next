@@ -17,20 +17,29 @@ import Layout from '@/components/_App/Layout'
 import { Provider } from 'react-redux'
 import { ToastProvider } from 'react-toast-notifications'
 import { useStore } from '../store'
+import Head from 'next/head'
 
 export default function App({ Component, pageProps }) {
     const store = useStore(pageProps.initialReduxState)
 
     return (
-        <ToastProvider 
-            placement = "bottom-left"
-            autoDismissTimeout={6000}
-            autoDismiss
-        >
-            <Provider store={store}>
-                <Layout />
-                <Component {...pageProps} />
-            </Provider>
-        </ToastProvider>
+        <>
+        <Head>
+                <meta charSet="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta name="robots" content="noindex"></meta>
+        </Head>
+            <ToastProvider 
+                placement = "bottom-left"
+                autoDismissTimeout={6000}
+                autoDismiss
+            >
+                <Provider store={store}>
+                    <Layout />
+                    <Component {...pageProps} />
+                </Provider>
+            </ToastProvider>
+        </>
+        
     )
 }

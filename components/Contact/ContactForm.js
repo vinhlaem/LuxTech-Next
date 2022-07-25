@@ -1,5 +1,8 @@
-import React, { useState } from 'react'
+import React, { useState, useRef } from 'react'
 import { useForm } from 'react-hook-form'
+import {yupResolver} from '@hookform/resolvers/yup'
+import * as yup from "yup"
+import emailjs from '@emailjs/browser';
 import Link from 'next/link'
 import axios from 'axios'
 import Swal from 'sweetalert2'
@@ -7,49 +10,47 @@ import withReactContent from 'sweetalert2-react-content'
 const MySwal = withReactContent(Swal)
 import baseUrl from '../../utils/baseUrl'
 
-const alertContent = () => {
-    MySwal.fire({
-        title: 'Congratulations!',
-        text: 'Your message was successfully send and will back to you soon',
-        icon: 'success',
-        timer: 2000,
-        timerProgressBar: true,
-        showConfirmButton: false,
-    })
-}
+
+
 
 // Form initial state
-const INITIAL_STATE = {
-    name: "",
-    email: "",
-    number: "",
-    subject: "",
-    text: ""
-};
+const Result = () => {
+    return(
+    <p>sucess</p>
+    )
+    
+}
+
+
+const schema = yup.object({
+    name: yup.string().required(),
+    email: yup.string().required().email(),
+    number: yup.string()
+    .required()
+    .matches(/^[0-9]+$/, "Must be only digits")
+    .min(10, 'Must be exactly 10 digits'),
+    subject: yup.string().required(),
+    message: yup.string().required()
+});
+
 
 const ContactForm = () => {
-    const [contact, setContact] = useState(INITIAL_STATE);
-    const { register, handleSubmit, errors } = useForm();
-    const handleChange = e => {
-        const { name, value } = e.target;
-        setContact(prevState => ({ ...prevState, [name]: value }));
-        console.log(contact)
-    }
+    
+    const { register, handleSubmit, formState:{errors}, reset } = useForm({resolver: yupResolver(schema)});
+    const form = useRef()
+    const [result, setResult] = useState(false)
+    const onSubmit = ()  => {
 
-    const onSubmit = async e => {
-        // e.preventDefault();
-        try {
-            const url = `${baseUrl}/api/contact`;
-            const { name, email, number, subject, text } = contact;
-            const payload = { name, email, number, subject, text };
-            await axios.post(url, payload);
-            console.log(url);
-            setContact(INITIAL_STATE);
-            alertContent();
-        } catch (error) {
-            console.log(error)
-        }
-    };
+    emailjs.sendForm('service_811vjco', 'template_t1ugif9', form.current, 'cc3dTiR3K0elY_ywF')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      reset()
+      setResult(true)
+  };
+      
 
     return (
         <div className="contact-area ptb-80">
@@ -66,7 +67,7 @@ const ContactForm = () => {
                     </div>
 
                     <div className="col-lg-6 col-md-12">
-                        <form className="contact-form" onSubmit={handleSubmit(onSubmit)}>
+                        <form ref={form} className="contact-form" onSubmit={handleSubmit(onSubmit)}>
                             <div className="row">
                                 <div className="col-lg-12 col-md-12">
                                     <div className="form-group">
@@ -75,13 +76,14 @@ const ContactForm = () => {
                                             name="name" 
                                             placeholder="Your Name" 
                                             className="form-control" 
-                                            value={contact.name}
-                                            onChange={handleChange}
-                                            ref={register({ required: true })}
+                                            
+                                            
+                                            {...register("name")}
                                         />
-                                        <div className='invalid-feedback' style={{display: 'block'}}>
-                                            {errors.name && 'Name is required.'}
-                                        </div>
+                                        {errors.name && <div className='invalid-feedback' style={{display: 'block'}}>
+                                            {errors.name.message}
+                                        </div>}
+                                        
                                     </div>
                                 </div>
 
@@ -92,13 +94,17 @@ const ContactForm = () => {
                                             name="email" 
                                             placeholder="Your email address" 
                                             className="form-control" 
-                                            value={contact.email}
-                                            onChange={handleChange}
-                                            ref={register({ required: true, pattern: /^\S+@\S+$/i })}
+                                            
+                                            
+                                            {...register("email")}
+                                            // ref={register({ required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i})}
                                         />
-                                        <div className='invalid-feedback' style={{display: 'block'}}>
-                                            {errors.email && 'Email is required.'}
-                                        </div>
+                                        {errors.email && <div className='invalid-feedback' style={{display: 'block'}}>
+                                            {errors.email.message}
+                                            {/* {errors.email?.type === "required" && 'Email is required.'} */}
+                                            {/* {errors.email?.type === "pattern" && 'Invalid Email Address'} */}
+                                        </div> }
+                                        
                                     </div>
                                 </div>
 
@@ -109,13 +115,16 @@ const ContactForm = () => {
                                             name="number" 
                                             placeholder="Your phone number" 
                                             className="form-control" 
-                                            value={contact.number}
-                                            onChange={handleChange}
-                                            ref={register({ required: true })}
+                                            
+                                           
+                                            {...register("number")}
+                                            // ref={register({ required: true, minLength:10 })}
                                         />
-                                        <div className='invalid-feedback' style={{display: 'block'}}>
-                                            {errors.number && 'Number is required.'}
-                                        </div>
+                                        {errors.number && <div className='invalid-feedback' style={{display: 'block'}}>
+                                            {errors.number.message}
+                                            
+                                            {/* {errors.email?.type === "pattern" && 'Invalid Email Address'} */}
+                                        </div> }
                                     </div>
                                 </div>
 
@@ -126,31 +135,35 @@ const ContactForm = () => {
                                             name="subject" 
                                             placeholder="Your Subject" 
                                             className="form-control" 
-                                            value={contact.subject}
-                                            onChange={handleChange}
-                                            ref={register({ required: true })}
+                                            
+                                            
+                                            {...register("subject")}
+                                            // ref={register({ required: true })}
                                         />
-                                        <div className='invalid-feedback' style={{display: 'block'}}>
-                                            {errors.subject && 'Subject is required.'}
-                                        </div>
+                                        {errors.subject && <div className='invalid-feedback' style={{display: 'block'}}>
+                                            {errors.subject.message}
+                                            {/* {errors.email?.type === "required" && 'Email is required.'} */}
+                                            {/* {errors.email?.type === "pattern" && 'Invalid Email Address'} */}
+                                        </div> }
                                     </div>
                                 </div>
 
                                 <div className="col-lg-12 col-md-12">
                                     <div className="form-group">
                                         <textarea 
-                                            name="text" 
+                                            name="message" 
                                             cols="30" 
                                             rows="5" 
                                             placeholder="Write your message..." 
-                                            className="form-control" 
-                                            value={contact.text}
-                                            onChange={handleChange}
-                                            ref={register({ required: true })}
+                                            className="form-control"
+                                            {...register('message')}
+                                           
+                                            // ref={register({ required: true })}
                                         />
-                                        <div className='invalid-feedback' style={{display: 'block'}}>
-                                            {errors.text && 'Message is required.'}
-                                        </div>
+                                        {errors.message && <div className='invalid-feedback' style={{display: 'block'}}>
+                                            {errors.message.message}
+                                            {/* {errors.text && 'Message is required.'} */}
+                                        </div>}
                                     </div>
 
                                 </div>
@@ -158,6 +171,7 @@ const ContactForm = () => {
                                 <div className="col-lg-12 col-sm-12">
                                     <button type="submit" className="btn btn-primary">Send Message</button>
                                 </div>
+                                <div className='row'>{result ? <Result/> : null}</div>
                             </div>
                         </form> 
                     </div>
