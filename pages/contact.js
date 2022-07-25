@@ -5,6 +5,7 @@ import PageBanner from '@/components/Common/PageBanner';
 import ContactInfo from '@/components/Contact/ContactInfo';
 import GoogleMap from '@/components/Contact/GoogleMap';
 import ContactForm from '@/components/Contact/ContactForm';
+import {NextSeo} from "next-seo"
 
 const Contact = () => {
     return (
