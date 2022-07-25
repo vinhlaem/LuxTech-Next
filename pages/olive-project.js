@@ -1,13 +1,33 @@
 import React from 'react';
 import Navbar from "@/components/_App/Navbar";
 import Footer from "@/components/_App/Footer";
-import PageBanner from '@/components/Common/PageBanner';  
+import PageBanner from '@/components/Common/PageBanner'; 
+import {NextSeo} from "next-seo" 
 import { features } from '@/components/Constant/constant';
 import * as Icon from 'react-feather';
 
 const Olive = () => {
     return (
         <>
+        <NextSeo
+            title="Olive"
+            openGraph={{
+                url: 'https://www.url.ie/a',
+                title: 'LuxTech || Olive',
+                description: 'olive',
+                images: [
+                  {
+                    url: 'https://lux-tech-next.vercel.app/images/works-image/olive.jpg',
+                    width: 800,
+                    height: 600,
+                    alt: 'olive',
+                    type: 'image/jpg',
+                  }
+                ],
+                site_name: 'olive',
+              }}
+         
+        />
             <Navbar />
 
             <PageBanner pageTitle="Projects Details" pageTitleSecond="OLIVE" />

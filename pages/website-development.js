@@ -2,17 +2,30 @@ import React from 'react';
 import Navbar from "@/components/_App/Navbar";
 import Footer from "@/components/_App/Footer";
 import PageBanner from '@/components/Common/PageBanner';
-import {
-    Accordion,
-    AccordionItem,
-    AccordionItemHeading,
-    AccordionItemPanel,
-    AccordionItemButton
-} from 'react-accessible-accordion';
+import {NextSeo} from "next-seo"
  
 const Web_Development = () => {
     return (
         <>
+        <NextSeo
+            title="Website"
+            openGraph={{
+                url: 'https://www.url.ie/a',
+                title: 'LuxTech || Mobile',
+                description: 'Mobile Development',
+                images: [
+                  {
+                    url: 'https://lux-tech-next.vercel.app/images/services-image/web.png',
+                    width: 800,
+                    height: 600,
+                    alt: 'About-us',
+                    type: 'image/png',
+                  }
+                ],
+                site_name: 'Website Development',
+              }}
+         
+        />
             <Navbar />
 
             <PageBanner pageTitle="Web Development" />

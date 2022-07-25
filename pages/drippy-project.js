@@ -3,11 +3,31 @@ import Navbar from "@/components/_App/Navbar";
 import Footer from "@/components/_App/Footer";
 import PageBanner from '@/components/Common/PageBanner';  
 import { features } from '@/components/Constant/constant';
+import {NextSeo} from "next-seo"
 import * as Icon from 'react-feather';
 
 const Drippy = () => {
     return (
         <>
+        <NextSeo
+            title="Drippy"
+            openGraph={{
+                url: 'https://www.url.ie/a',
+                title: 'LuxTech || Drippy',
+                description: 'drippy',
+                images: [
+                  {
+                    url: 'https://lux-tech-next.vercel.app/images/works-image/drippy.jpg',
+                    width: 800,
+                    height: 600,
+                    alt: 'drippy',
+                    type: 'image/jpg',
+                  }
+                ],
+                site_name: 'drippy',
+              }}
+         
+        />
             <Navbar />
 
             <PageBanner pageTitle="Projects Details" pageTitleSecond="DRIPPY ZOMBIES" />

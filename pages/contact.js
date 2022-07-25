@@ -9,6 +9,9 @@ import ContactForm from '@/components/Contact/ContactForm';
 const Contact = () => {
     return (
         <>
+        <NextSeo
+            title="Contact us"
+        />
             <Navbar />
 
             <PageBanner pageTitle="Contact Us" />
