@@ -1,3 +1,5 @@
+import * as Icon from 'react-feather';
+
 export const img = [
     {
         url: '/images/banner-image/man.png',
@@ -182,7 +184,7 @@ export const funfact = [
     },
 ]
 
-export const features =[
+export const features = [
     {
         name: 'TOKENOMICS',
         content: 'Drippy Zombie NFTs have the utility of $WRLD & $DRIPPY tokens. Holders may earn tokens passively via staking or by playing in our Metaverse (Coming soon).',
@@ -214,4 +216,43 @@ export const features =[
         img: '/images/works-image/more.png'
     },
 
+]
+
+export const project = [
+    {
+        name: 'Drippy',
+        img: '/images/works-image/drippy.jpg',
+        url: '/drippy-project',
+        introduction: 'Drippy Zombies is a collection of hand-drawn zombies.'
+    },
+    {
+        name: 'Float',
+        img: '/images/works-image/float.jpg',
+        url: '/float-project',
+        introduction: 'Float turns your docs in Notion into a fully operational online course in minutes. All the power of a traditional course platform, built in the same place you take notes.'
+    },
+    {
+        name: 'Olive',
+        img: '/images/works-image/olive.jpg',
+        url: '/olive-project',
+        introduction: "Olive's machine learning algorithms give you access to option strategies previously only available to institutions and ultra-high net worth individuals."
+    },
+]
+
+export const services = [
+    {
+        title: 'Website Development',
+        img: '/images/services-image/web.png',
+        url: '/website-development'
+    },
+    {
+        title: 'Mobile Development',
+        img: '/images/services-image/mobile.png',
+        url: '/mobile-development'
+    },
+    {
+        title: 'Blockchain Development',
+        img: '/images/services-image/blockchains.png',
+        url: '/blockchain-development'
+    },
 ]

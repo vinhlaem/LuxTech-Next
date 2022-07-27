@@ -4,6 +4,7 @@ import Navbar from "@/components/_App/Navbar";
 import Team from "@/components/Common/Team";
 import Footer from "@/components/_App/Footer";
 import PageBanner from '@/components/Common/PageBanner';
+import { shape } from '@/components/Constant/constant';
 
 
 const About3 = () => {
@@ -88,21 +89,11 @@ const About3 = () => {
                 </div>
 
                 {/* Shape Images */}
-                <div className="shape2 rotateme">
-                    <img src="/images/shape2.svg" alt="shape" />
-                </div>
-                <div className="shape3">
-                    <img src="/images/shape3.svg" alt="shape" />
-                </div>
-                <div className="shape6 rotateme">
-                    <img src="/images/shape4.svg" alt="shape" />
-                </div>
-                <div className="shape7">
-                    <img src="/images/shape4.svg" alt="shape" />
-                </div>
-                <div className="shape8 rotateme">
-                    <img src="/images/shape2.svg" alt="shape" />
-                </div>
+                {shape.map((value, index) => (
+                <div key={index} className={value.shape}>
+				    <img src={value.urlimg} alt="shape"/>
+			    </div>
+            ))}
             </div>
 
             <Team />           

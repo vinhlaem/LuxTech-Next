@@ -9,10 +9,10 @@ const Blockchain_Development = () => {
     return (
         <>
         <NextSeo
-            title="Blockchain"
+            title="Blockchain Development"
             openGraph={{
                 url: 'https://www.url.ie/a',
-                title: 'LuxTech || BlockChain',
+                title: 'LuxTech || BlockChain Development',
                 description: 'Blockchain Development',
                 images: [
                   {

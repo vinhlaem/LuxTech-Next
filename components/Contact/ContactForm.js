@@ -6,18 +6,6 @@ import emailjs from '@emailjs/browser';
 import swal from 'sweetalert';
 
 
-
-
-
-// Form initial state
-const Result = () => {
-    return(
-    <p>sucess</p>
-    )
-    
-}
-
-
 const schema = yup.object({
     name: yup.string().required(),
     email: yup.string().required().email(),
@@ -34,16 +22,16 @@ const ContactForm = () => {
     
     const { register, handleSubmit, formState:{errors}, reset } = useForm({resolver: yupResolver(schema)});
     const form = useRef()
-    const [result, setResult] = useState(false)
     const onSubmit = ()  => {
 
     emailjs.sendForm('service_811vjco', 'template_t1ugif9', form.current, 'cc3dTiR3K0elY_ywF')
       .then((result) => {
-          console.log(result.text);
+          
           swal("Success!", "Thank for contact us!", "success");
           reset()
       }, (error) => {
-          console.log(error.text);
+          
+          swal("Fail!", "Try agian!", "error");
       });
       
       
@@ -74,8 +62,6 @@ const ContactForm = () => {
                                             name="name" 
                                             placeholder="Your Name" 
                                             className="form-control" 
-                                            
-                                            
                                             {...register("name")}
                                         />
                                         {errors.name && <div className='invalid-feedback' style={{display: 'block'}}>
@@ -92,17 +78,12 @@ const ContactForm = () => {
                                             name="email" 
                                             placeholder="Your email address" 
                                             className="form-control" 
-                                            
-                                            
                                             {...register("email")}
-                                            // ref={register({ required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i})}
+                                            
                                         />
                                         {errors.email && <div className='invalid-feedback' style={{display: 'block'}}>
                                             {errors.email.message}
-                                            {/* {errors.email?.type === "required" && 'Email is required.'} */}
-                                            {/* {errors.email?.type === "pattern" && 'Invalid Email Address'} */}
                                         </div> }
-                                        
                                     </div>
                                 </div>
 
@@ -113,15 +94,10 @@ const ContactForm = () => {
                                             name="number" 
                                             placeholder="Your phone number" 
                                             className="form-control" 
-                                            
-                                           
                                             {...register("number")}
-                                            // ref={register({ required: true, minLength:10 })}
                                         />
                                         {errors.number && <div className='invalid-feedback' style={{display: 'block'}}>
                                             {errors.number.message}
-                                            
-                                            {/* {errors.email?.type === "pattern" && 'Invalid Email Address'} */}
                                         </div> }
                                     </div>
                                 </div>
@@ -133,15 +109,10 @@ const ContactForm = () => {
                                             name="subject" 
                                             placeholder="Your Subject" 
                                             className="form-control" 
-                                            
-                                            
                                             {...register("subject")}
-                                            // ref={register({ required: true })}
                                         />
                                         {errors.subject && <div className='invalid-feedback' style={{display: 'block'}}>
                                             {errors.subject.message}
-                                            {/* {errors.email?.type === "required" && 'Email is required.'} */}
-                                            {/* {errors.email?.type === "pattern" && 'Invalid Email Address'} */}
                                         </div> }
                                     </div>
                                 </div>
@@ -155,21 +126,15 @@ const ContactForm = () => {
                                             placeholder="Write your message..." 
                                             className="form-control"
                                             {...register('message')}
-                                           
-                                            // ref={register({ required: true })}
                                         />
                                         {errors.message && <div className='invalid-feedback' style={{display: 'block'}}>
                                             {errors.message.message}
-                                            {/* {errors.text && 'Message is required.'} */}
                                         </div>}
                                     </div>
-
                                 </div>
-            
                                 <div className="col-lg-12 col-sm-12">
                                     <button type="submit" className="btn btn-primary">Send Message</button>
                                 </div>
-                                {/* <div className='row'>{result ? <Result/> : null}</div> */}
                             </div>
                         </form> 
                     </div>

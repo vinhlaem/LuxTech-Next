@@ -39,7 +39,7 @@ const Footer = () => {
                                 </li>
                                 <li>
                                     <Link href="/drippy-project">
-                                        <a>Stories</a>
+                                        <a>Projects</a>
                                     </Link>
                                 </li>
                             </ul>
@@ -79,7 +79,7 @@ const Footer = () => {
                                 </li>
                                 <li> 
                                     <Icon.PhoneCall />
-                                    Phone: <a href="tel:321984754">+84 355 821 097</a>
+                                    Phone: <a href="tel:+84 355 821 097">+84 355 821 097</a>
                                 </li>
                             </ul>
                             <ul className="social-links">

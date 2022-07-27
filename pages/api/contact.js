@@ -11,7 +11,7 @@ const transporter = {
 const mailer = nodemailer.createTransport(sgTransport(transporter));
 
 export default async (req, res) => {
-    console.log(req.body)
+   
     const {name, email, number, subject, text} = req.body;
     const data = {
         // Update email address here

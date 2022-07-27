@@ -8,17 +8,17 @@ const Mobile_Development = () => {
     return (
         <>
         <NextSeo
-            title="Mobile"
+            title="Mobile Development"
             openGraph={{
                 url: 'https://www.url.ie/a',
-                title: 'LuxTech || Mobile',
+                title: 'LuxTech || Mobile Development',
                 description: 'Mobile Development',
                 images: [
                   {
                     url: 'https://lux-tech-next.vercel.app/images/services-image/mobile.png',
                     width: 800,
                     height: 600,
-                    alt: 'About-us',
+                    alt: 'Mobile',
                     type: 'image/png',
                   }
                 ],

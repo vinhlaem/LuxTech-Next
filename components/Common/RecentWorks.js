@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import * as Icon from 'react-feather';
+import { project } from '../Constant/constant';
 import dynamic from 'next/dynamic';
 const OwlCarousel = dynamic(import('react-owl-carousel3'));
 
@@ -37,7 +37,7 @@ const RecentWorks = () => {
         <div className="works-area pt-80 pb-50 bg-f7fafd">
             <div className="container">
                 <div className="section-title">
-                    <h3>Our Product</h3>
+                    <h3>Our Projects</h3>
                     <div className="bar"></div>
                 </div>
             </div>
@@ -46,52 +46,19 @@ const RecentWorks = () => {
                 className="works-slides owl-carousel owl-theme"
                 {...options}
             > 
-                <div className="single-works">
-                    <img src="/images/works-image/drippy.jpg" alt="image" />
-
-                    
-
+            {project.map((value, index) => (
+                <div key={index} className="single-works">
+                    <img src={value.img} alt={value.name} />
                     <div className="works-content">
                         <h2>
-                            <Link href="/drippy-project">
-                                <a>Drippy</a>
+                            <Link href={value.url}>
+                                <a>{value.name}</a>
                             </Link>
                         </h2>
-                      <p>Drippy Zombies is a collection of hand-drawn zombies.</p>
+                    <p>{value.introduction}</p>
                     </div>
                 </div>
-    
-                <div className="single-works">
-                    <img src="/images/works-image/float.jpg" alt="image" />
-
-                   
-
-                    <div className="works-content">
-                        <h2>
-                            <Link href="/float-project">
-                                <a>Float</a>
-                            </Link>
-                        </h2>
-                        <p>Float turns your docs in Notion into a fully operational online course in minutes. 
-                            All the power of a traditional course platform, built in the same place you take notes.</p>
-                    </div>
-                </div>
-    
-                <div className="single-works">
-                    <img src="/images/works-image/olive.jpg" alt="image" />
-
-
-                    <div className="works-content">
-                        <h2 className='title-h2'>
-                            <Link href="/olive-project">
-                                <a>Olive</a>
-                            </Link>
-                        </h2>
-                       <p>Olive's machine learning algorithms give you access to option strategies previously only available to institutions and ultra-high net worth individuals.</p>
-                    </div>
-                </div>
-        
-                
+            ))}        
             </OwlCarousel> : ''}
             
             {/* Shape Images */}
