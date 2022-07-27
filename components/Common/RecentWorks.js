@@ -47,17 +47,19 @@ const RecentWorks = () => {
                 {...options}
             > 
             {project.map((value, index) => (
-                <div key={index} className="single-works">
-                    <img src={value.img} alt={value.name} />
-                    <div className="works-content">
-                        <h2>
-                            <Link href={value.url}>
-                                <a>{value.name}</a>
-                            </Link>
-                        </h2>
-                    <p>{value.introduction}</p>
+                <Link key={index} href={value.url}>
+                    <div  className="single-works">
+                        <img src={value.img} alt={value.name} />
+                        <div className="works-content">
+                            <h2>
+                                <Link href={value.url}>
+                                    <a>{value.name}</a>
+                                </Link>
+                            </h2>
+                        <p>{value.introduction}</p>
+                        </div>
                     </div>
-                </div>
+                </Link>
             ))}        
             </OwlCarousel> : ''}
             

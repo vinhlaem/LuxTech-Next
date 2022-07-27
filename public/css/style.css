@@ -2242,6 +2242,7 @@ Works CSS
 }
 
 .single-works {
+  cursor: pointer;
   position: relative;
   margin-bottom: 30px;
   width: 400px;
