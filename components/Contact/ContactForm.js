@@ -2,19 +2,18 @@ import React, { useState, useRef } from 'react'
 import { useForm } from 'react-hook-form'
 import {yupResolver} from '@hookform/resolvers/yup'
 import * as yup from "yup"
+import "yup-phone"
 import emailjs from '@emailjs/browser';
 import swal from 'sweetalert';
 
+const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
 const schema = yup.object({
-    name: yup.string().required(),
-    email: yup.string().required().email(),
-    number: yup.string()
-    .required()
-    .matches(/^[0-9]+$/, "Must be only digits")
-    .min(10, 'Must be exactly 10 digits'),
-    subject: yup.string().required(),
-    message: yup.string().required()
+    name: yup.string().required("Name is a required field"),
+    email: yup.string().required("Email is a required field").email(),
+    number: yup.string().required("Phone number is required field").phone("Phone number is not valid"),
+    subject: yup.string().required("Subject is a required field"),
+    message: yup.string().required("Message is a required field")
 });
 
 
@@ -24,7 +23,7 @@ const ContactForm = () => {
     const form = useRef()
     const onSubmit = ()  => {
 
-    emailjs.sendForm('service_811vjco', 'template_t1ugif9', form.current, 'cc3dTiR3K0elY_ywF')
+    emailjs.sendForm('service_h98il2o', 'template_40sayqt', form.current, 'kuT1XmcjxuLgv9ksP')
       .then((result) => {
           
           swal("Success!", "Thank for contact us!", "success");

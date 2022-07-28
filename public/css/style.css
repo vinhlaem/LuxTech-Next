@@ -8978,4 +8978,20 @@ Go Top CSS
 }
 .lang-didebar a:last-child {
   background-color: #483e3e;
+}
+
+.swal-icon--success {
+  border-color: #7cd1f9;
+}
+
+.swal-icon--success__line {
+  background-color: #7cd1f9;
+}
+
+.swal-icon--success__ring {
+  border: 4px solid hsla(203deg, 56%, 54%, 0.43);
+}
+
+.swal-title {
+  color: #000;
 }/*# sourceMappingURL=style.css.map */
