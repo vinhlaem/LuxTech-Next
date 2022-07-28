@@ -6,11 +6,10 @@ import "yup-phone"
 import emailjs from '@emailjs/browser';
 import swal from 'sweetalert';
 
-const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
 
 const schema = yup.object({
     name: yup.string().required("Name is a required field"),
-    email: yup.string().required("Email is a required field").email(),
+    email: yup.string().required("Email is a required field").email("Email must be a valid email"),
     number: yup.string().required("Phone number is required field").phone("Phone number is not valid"),
     subject: yup.string().required("Subject is a required field"),
     message: yup.string().required("Message is a required field")
