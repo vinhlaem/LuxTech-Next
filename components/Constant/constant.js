@@ -150,7 +150,7 @@ export const team = [
     },
     {
         name: 'Mr. Toan',
-        url_img: '/images/team-image/Toan.png',
+        url_img: '/images/team-image/Toan.jpg',
         skill: 'Web Developer'
     },
     {
@@ -168,6 +168,37 @@ export const team = [
         url_img: '/images/team-image/Man.jpg',
         skill: 'Web Developer'
     },
+    {
+        name: 'Mr. Khanh',
+        url_img: '/images/team-image/khanh.jpg',
+        skill: 'Web Developer'
+    },
+    {
+        name: 'Mr. Khai',
+        url_img: '/images/team-image/khai.jpg',
+        skill: 'Web & Mobile Developer'
+    },
+    {
+        name: 'Mr. Quoc',
+        url_img: '/images/team-image/quoc.png',
+        skill: 'Web Developer'
+    },
+    {
+        name: 'Mr. Nhat',
+        url_img: '/images/team-image/nhat.png',
+        skill: 'Intern'
+    },
+    {
+        name: 'Mr. Huy',
+        url_img: '/images/team-image/huy.jpg',
+        skill: 'Intern'
+    },
+    {
+        name: 'Mr. Vinh',
+        url_img: '/images/team-image/vinh.jpg',
+        skill: 'Intern'
+    },
+    
 ]
 export const funfact = [
     {

@@ -21,11 +21,11 @@ const ContactForm = () => {
     
     const { register, handleSubmit, formState:{errors}, reset } = useForm({resolver: yupResolver(schema)});
     const form = useRef()
-    const onSubmit = ()  => {
+    const onSubmit = (data)  => {
 
     emailjs.sendForm('service_h98il2o', 'template_40sayqt', form.current, 'kuT1XmcjxuLgv9ksP')
       .then((result) => {
-          
+          console.log(data)
           swal("Success!", "Thank for contact us!", "success");
           reset()
       }, (error) => {
