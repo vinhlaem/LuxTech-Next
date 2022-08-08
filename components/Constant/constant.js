@@ -170,32 +170,32 @@ export const team = [
     },
     {
         name: 'Mr. Khanh',
-        url_img: '/images/team-image/khanh.jpg',
+        url_img: '/images/team-image/Khanh.jpg',
         skill: 'Web Developer'
     },
     {
         name: 'Mr. Khai',
-        url_img: '/images/team-image/khai.jpg',
+        url_img: '/images/team-image/Khai.jpg',
         skill: 'Web & Mobile Developer'
     },
     {
         name: 'Mr. Quoc',
-        url_img: '/images/team-image/quoc.png',
+        url_img: '/images/team-image/Quoc.png',
         skill: 'Web Developer'
     },
     {
         name: 'Mr. Nhat',
-        url_img: '/images/team-image/nhat.png',
+        url_img: '/images/team-image/Nhat.png',
         skill: 'Intern'
     },
     {
         name: 'Mr. Huy',
-        url_img: '/images/team-image/huy.jpg',
+        url_img: '/images/team-image/Huy.jpg',
         skill: 'Intern'
     },
     {
         name: 'Mr. Vinh',
-        url_img: '/images/team-image/vinh.jpg',
+        url_img: '/images/team-image/Vinh.jpg',
         skill: 'Intern'
     },
     
