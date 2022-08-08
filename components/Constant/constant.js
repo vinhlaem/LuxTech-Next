@@ -150,7 +150,7 @@ export const team = [
     },
     {
         name: 'Mr. Toan',
-        url_img: '/images/team-image/Toan.jpg',
+        url_img: '/images/team-image/Toan.png',
         skill: 'Web Developer'
     },
     {
@@ -180,12 +180,12 @@ export const team = [
     },
     {
         name: 'Mr. Quoc',
-        url_img: '/images/team-image/Quoc.png',
+        url_img: '/images/team-image/Quoc.jpg',
         skill: 'Web Developer'
     },
     {
         name: 'Mr. Nhat',
-        url_img: '/images/team-image/Nhat.png',
+        url_img: '/images/team-image/Nhat.jpg',
         skill: 'Intern'
     },
     {
